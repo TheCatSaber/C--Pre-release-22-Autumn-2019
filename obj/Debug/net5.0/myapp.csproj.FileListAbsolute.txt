@@ -1,0 +1,16 @@
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\bin\Debug\net5.0\myapp.exe
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\bin\Debug\net5.0\myapp.deps.json
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\bin\Debug\net5.0\myapp.runtimeconfig.json
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\bin\Debug\net5.0\myapp.runtimeconfig.dev.json
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\bin\Debug\net5.0\myapp.dll
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\bin\Debug\net5.0\ref\myapp.dll
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\bin\Debug\net5.0\myapp.pdb
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.csproj.AssemblyReference.cache
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.AssemblyInfoInputs.cache
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.AssemblyInfo.cs
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.csproj.CoreCompileInputs.cache
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.dll
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\ref\myapp.dll
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.pdb
+C:\Users\Work\Documents\C+C++C#\C# Pre-release 22 Autumn 2019\obj\Debug\net5.0\myapp.genruntimeconfig.cache
