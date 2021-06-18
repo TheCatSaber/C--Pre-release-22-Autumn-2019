@@ -90,6 +90,30 @@ namespace PreRelease22Autumn2019
                 }
             }
         }
+        static double GetUserDouble(string name, int lowerBound, int upperBound)
+        {
+            while (true)
+            {
+                Console.WriteLine($"Enter {name}: ");
+                string answer = Console.ReadLine();
+                try
+                {
+                    double answerDouble = Convert.ToDouble(answer);
+                    if (lowerBound <= answerDouble && answerDouble <= upperBound)
+                    {
+                        return answerDouble;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"The number you enter must be between {lowerBound} and {upperBound}.");
+                    }
+                }
+                catch (System.FormatException)
+                {
+                    Console.WriteLine($"Please enter a number between {lowerBound} and {upperBound}");
+                }
+            }
+        }
         static void Main(string[] args)
         {
             List<string> colours = new List<string>()
@@ -146,30 +170,38 @@ namespace PreRelease22Autumn2019
             //Console.WriteLine($"{area} {volume}");
             //volume = 100000;
             // 100,000 mm^3 = $0.05
-            double baseCost = volume/100000 *0.05;
+            double concretePrice = GetUserDouble("the cost of 100 000 mm³ basic concrete in dollars", 0, 100);
+            List<string> concreteGrades = new List<string>()
+            {
+                "Basic",
+                "Best"
+            };
+            int concreteGradeIndex = GetUserIndex(concreteGrades, "concrete grade");
+            double concreteGradeCostMultiplier = (concreteGradeIndex == 1) ? 1.07 : 1;
+            double baseCost = volume/100000 * concretePrice * concreteGradeCostMultiplier;
             // Console.WriteLine($"${Math.Round(baseCost, 2)}");
             bool customColour = (colourIndex == 4) ? true : false;
             int setUpPrice = (customColour) ? 5 : 0;
-            double cost_colour_multiplier = 1;
+            double costColourMultiplier = 1;
             switch (colourIndex)
             {
                 case 1:
-                    cost_colour_multiplier = 1;
+                    costColourMultiplier = 1;
                     break;
                 case 2:
-                    cost_colour_multiplier = 1.1;
+                    costColourMultiplier = 1.1;
                     break;
                 case 3:
-                    cost_colour_multiplier = 1.1;
+                    costColourMultiplier = 1.1;
                     break;
                 case 4:
-                    cost_colour_multiplier = 1.15;
+                    costColourMultiplier = 1.15;
                     break;
                 default:
-                    cost_colour_multiplier = 1;
+                    costColourMultiplier = 1;
                     break;
             }
-            double slabCost = baseCost * cost_colour_multiplier;
+            double slabCost = baseCost * costColourMultiplier;
             double twentySlabCost = 20 * slabCost;
             Console.WriteLine($"Colour: {colours[colourIndex-1]}\nDepth: {depth}mm\nShape: {sizes[sizeIndex-1]}");
             Console.WriteLine($"Cost per 20 slabs: ${Math.Round(twentySlabCost, 2)}");
